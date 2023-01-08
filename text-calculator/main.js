@@ -1,7 +1,7 @@
 window.onload = () => {
     const input = document.getElementById('text-input');
-    const showAll = document.getElementById('show-all');
-    const showPart = document.getElementById('show-part');
+    const showPunctuation = document.getElementById('show-punctuation');
+    const showWithoutPunctuation = document.getElementById('show-without-punctuation');
 
     input.addEventListener('input',(e) =>{
         e.preventDefault()
@@ -14,8 +14,8 @@ window.onload = () => {
         // console.log(origin.length)
         // console.log(after.toString())
         // console.log(after.toString().length)
-        showAll.innerHTML = origin.length
-        showPart.innerHTML = after.length
+        showPunctuation.innerHTML = origin.length
+        showWithoutPunctuation.innerHTML = after.length
     })
 }
 
